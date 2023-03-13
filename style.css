@@ -1,0 +1,99 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #1f2937;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: rgb(228, 219, 219);
+}
+
+button{
+    transition-duration: 0.3s;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 6px;
+    margin: 1px;
+}
+
+button:hover {
+    background-color: rgb(185, 174, 174);
+    color: white;
+}
+
+.equals {
+    background-color: rgb(50, 145, 42);
+    color: white;
+    font-weight: 900;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.equals:hover {
+    background-color: rgb(9, 114, 0);
+    color: white;
+}
+
+.delete{
+    background-color: rgb(172, 40, 40);
+    color: white;
+}
+
+.delete:hover {
+    background-color: rgb(124, 5, 5);
+    color: white;
+}
+
+.container{
+    background-color: rgb(185, 174, 174);
+    height: 70%;
+    width: 30%;
+    align-items: stretch;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.result,
+.count{  
+    background-color: rgb(228, 219, 219); 
+    text-align: end;
+    padding: 10px;
+}
+
+.count{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.result{
+    font-weight: bold;
+    font-size: 30px;
+    height: 10%;
+    width: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.buttonContainer{
+    display: grid;
+    border-radius: 8px;
+    margin-top: 15px;
+    height: 70%;
+    align-self: stretch; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.footer{
+    background-color: rgb(185, 174, 174);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
