@@ -17,8 +17,14 @@ h1{
 button{
     transition-duration: 0.3s;
     border: 1px solid rgb(156, 156, 156);
+    margin: 3px;
     border-radius: 6px;
-    margin: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    
 }
 
 button:hover {
@@ -26,6 +32,11 @@ button:hover {
     color: white;
 }
 
+button:active {
+    background-color: rgb(185, 174, 174);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
 .equals {
     background-color: rgb(50, 145, 42);
     color: white;
@@ -39,9 +50,16 @@ button:hover {
     color: white;
 }
 
+.clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .delete{
     background-color: rgb(172, 40, 40);
     color: white;
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 
 .delete:hover {
